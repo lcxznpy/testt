@@ -1,12 +1,11 @@
 package main
 
-import "fmt"
-
-func Cat() string {
-	return "~~~qqq"
-}
+import (
+	"fmt"
+	"test/animal"
+)
 
 func main() {
-	got := Cat()
+	got := animal.Cat()
 	fmt.Println(got)
 }
