@@ -1,12 +1,13 @@
 package main
 
-import "fmt"
-
-func Cat() string {
-	return "~~~qqq"
-}
+import (
+	"fmt"
+	"test/animal"
+)
 
 func main() {
-	got := Cat()
+	var password = "ed4b76e52f61a1fc8f3d997815aaafcf731a2f78"
+	fmt.Printf("password:%s", password)
+	got := animal.Cat()
 	fmt.Println(got)
 }
