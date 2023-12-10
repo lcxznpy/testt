@@ -7,7 +7,7 @@ import (
 
 func main() {
 	var password = "qaqaqqaqq"
-	fmt.Println("password:%s", password)
+	fmt.Printf("password:%s", password)
 	got := animal.Cat()
 	fmt.Println(got)
 }
