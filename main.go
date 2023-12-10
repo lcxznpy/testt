@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func Cat() string {
-	return "qqqq"
+	return "~~~qqq"
 }
 
 func main() {
