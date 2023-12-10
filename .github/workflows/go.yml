@@ -30,10 +30,10 @@ jobs:
           version: v1.54
 
     - name: Run Gosec Security Scanner
-      run: |
-        export PATH=$PATH:$(go env GOPATH)/bin
-        go get github.com/securego/gosec/cmd/gosec
-        gosec ./...
+      uses: securego/gosec@master
+      with:
+        # we let the report trigger content trigger a failure using the GitHub Security features.
+        args: '-no-fail -fmt sarif -out results.sarif ./...'
 
     - name: Test
       run: go test -v ./...
